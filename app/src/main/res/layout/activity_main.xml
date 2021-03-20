@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A3ABD8"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center"
+        android:text="@string/company_name"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    />
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="206dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="12dp"
+        android:background="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Shop_name"
+        app:srcCompat="@drawable/icecream_app_logo" />
+
+    <TextView
+        android:id="@+id/Since"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="123dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="131dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/since"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Logo"
+        app:layout_constraintStart_toStartOf="@+id/Logo"
+        app:layout_constraintTop_toTopOf="@+id/Logo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Choose_Flavour"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/andika"
+        android:text="@string/Choose_Flavour"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/strawberry_icecream"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="121dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/Strawberry_Flavour"
+        android:textColor="@color/purple_700"
+        app:layout_constraintTop_toBottomOf="@+id/Choose_Flavour"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="184dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chocolate_icecream" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="172dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/Chocolate_Flavour"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

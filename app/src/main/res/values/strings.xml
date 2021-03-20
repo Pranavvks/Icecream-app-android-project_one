@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ice-Cream-Home</string>
+    <string name = "company_name">I-Icecream</string>
+    <string name = "since">Since:1988</string>
+    <string name="Choose_Flavour">Choose Flavour: </string>
+    <string name="Strawberry_Flavour">Strawberry</string>
+    <string name="Chocolate_Flavour">Chocolate</string>
+</resources>
